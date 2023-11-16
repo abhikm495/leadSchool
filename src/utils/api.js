@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://www.zippopotam.us/in";
+const BASE_URL = "https://www.zippopotam.us/in";
 
 export const fetchDataFromApi = async (url) => {
   try {
