@@ -1,11 +1,12 @@
 import axios from "axios";
 
-const BASE_URL =
-  "https://cors-anywhere.herokuapp.com/http://www.zippopotam.us/in";
+const BASE_URL = "/.functions/proxy?path=";
 
-export const fetchDataFromApi = async (url) => {
+export const fetchDataFromApi = async (postcode) => {
+  const apiUrl = `${BASE_URL}${postcode}`;
+
   try {
-    const { data } = await axios.get(`${BASE_URL}${url}`);
+    const { data } = await axios.get(apiUrl);
     return data;
   } catch (err) {
     console.error(err);
