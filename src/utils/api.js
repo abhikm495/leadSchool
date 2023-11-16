@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://www.zippopotam.us/in";
+const BASE_URL =
+  "https://cors-anywhere.herokuapp.com/http://www.zippopotam.us/in";
 
 export const fetchDataFromApi = async (url) => {
   try {

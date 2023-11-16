@@ -3,10 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
 import SearchResult from "./components/searchResult/SearchResult";
-const express = require("express");
-const app = express();
-const cors = require("cors");
-app.use(cors());
 function App() {
   return (
     <BrowserRouter>
