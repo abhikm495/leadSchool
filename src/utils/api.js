@@ -1,12 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = "/.functions/proxy?path=";
+const BASE_URL = "http://www.zippopotam.us/in";
 
-export const fetchDataFromApi = async (postcode) => {
-  const apiUrl = `${BASE_URL}${postcode}`;
-
+export const fetchDataFromApi = async (url) => {
   try {
-    const { data } = await axios.get(apiUrl);
+    const { data } = await axios.get(BASE_URL + url, {});
     return data;
   } catch (err) {
     console.error(err);
