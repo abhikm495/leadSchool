@@ -25,8 +25,7 @@ const SearchResult = () => {
         {!loading && data && data.message && (
           <div className="error-container">
             <p className="error-message">
-              The following POSTAL CODE does not exist. Please enter a valid
-              postal code.
+              POSTAL CODE does not exist. Please enter a valid postal code.
             </p>
             <button className="error-button" onClick={handleBackButtonClick}>
               Go Back to Home
